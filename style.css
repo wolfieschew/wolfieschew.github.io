@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 2500px;
+}
+
+body .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 9.5%;
+}
+
+body .navbar .logo {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Young Serif", serif;
+}
+
+body .navbar .btn-github {
+  font-size: 1rem;
+  margin-top: 0.1rem;
+  background: linear-gradient(#07b6d1, #13b8a9);
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+
+/* section home */
+.home {
+  padding: 10.4rem 9.5%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  background: linear-gradient(
+    to right,
+    #07b6d0,
+    #13b8a9
+  ); /* Tentukan warna gradient */
+  -webkit-background-clip: text; /* Aktifkan efek gradient pada teks (Chrome, Safari) */
+  background-clip: text; /* Aktifkan efek gradient pada teks (Firefox) */
+  color: transparent; /* Membuat teks menjadi transparan, sehingga efek gradient terlihat */
+}
+
+.home h4 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.home .btn-social {
+  margin-top: 1rem;
+  height: 2.5rem;
+}
+
+.home .btn-social-instagram {
+  height: 2.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.home .btn-social-github {
+  height: 2.6rem;
+}
+
+.home .profile .profile-icon {
+  margin-top: 2rem;
+  width: 200px; /* Atur ukuran gambar sesuai kebutuhan Anda */
+  height: 200px; /* Ukuran tinggi juga bisa diatur sesuai kebutuhan Anda */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+/* section end home */
+
+/* section about me */
+.about-me {
+  padding: 1.4rem 9.5%;
+  margin-top: 5rem;
+}
+
+.about-me h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-me p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: sans-serif;
+}
+
+.about-me p span {
+  color: #07b6d1;
+}
+
+.about-me p .yellow-spn {
+  color: #ff0000;
+}
+/* section about me end */
+
+/* section box start */
+.box {
+  margin-top: 5rem;
+  padding: 1.4rem 9.5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box .box-card {
+  padding-top: 1.5rem;
+  border: 1px solid #e8e8e8;
+  width: 400px; /* Lebar tetap 200px */
+  height: 400px; /* Tinggi yang cukup besar untuk membuatnya panjang ke bawah */
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box .box-card .img-icon {
+  display: block;
+  margin: auto;
+  height: 120px;
+}
+
+.box .box-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #13b8a9;
+  font-size: 1.2rem;
+}
+
+.box .box-card p {
+  font-family: sans-serif;
+  text-align: center;
+  display: block;
+}
+
+.box .box-card .list-app {
+  margin-top: 1.5rem;
+  line-height: 1.8rem;
+}
+/* section box end */
+/* section project start */
+.project {
+  padding: 1.4rem 9.5%;
+  margin-top: 5rem;
+}
+
+.project .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project .content p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.project .content span {
+  color: #13b8a9;
+}
+/* section project end */
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 75%;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .box .box-card {
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    border: 1px solid #e8e8e8;
+    width: 350px; /* Lebar tetap 200px */
+    height: 350px; /* Tinggi yang cukup besar untuk membuatnya panjang ke bawah */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+}
