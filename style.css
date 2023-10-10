@@ -177,6 +177,17 @@ body .navbar .btn-github {
   color: #13b8a9;
 }
 
+.project .content .btn-project {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: #09b6c9;
+  color: #fff;
+}
+
+.project .content .btn-project:hover {
+  opacity: 0.5;
+}
+
 /* section project end */
 
 /* section box end */
