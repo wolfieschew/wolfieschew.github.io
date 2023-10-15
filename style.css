@@ -1,242 +1,239 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  min-height: 2500px;
+  font-family: "Roboto", sans-serif;
 }
 
-body .navbar {
+.navbar {
+  padding: 1.4rem 7%;
   display: flex;
   justify-content: space-between;
-  padding: 1.4rem 9.5%;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-body .navbar .logo {
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: "Young Serif", serif;
-}
-
-body .navbar .btn-github {
-  font-size: 1rem;
-  margin-top: 0.1rem;
-  background: linear-gradient(#07b6d1, #13b8a9);
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 0.4rem;
-  color: #fff;
-}
-
-/* section home */
-.home {
-  padding: 10.4rem 9.5%;
-  display: block;
-  justify-content: center;
-  text-align: center;
-}
-
-.home h1 {
-  font-size: 4rem;
-  font-weight: 400;
-  background: linear-gradient(to right,
-      #07b6d0,
-      #13b8a9);
-  /* Tentukan warna gradient */
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #36d1dc 0%, #5b86e5);
   -webkit-background-clip: text;
-  /* Aktifkan efek gradient pada teks (Chrome, Safari) */
-  background-clip: text;
-  /* Aktifkan efek gradient pada teks (Firefox) */
-  color: transparent;
-  /* Membuat teks menjadi transparan, sehingga efek gradient terlihat */
+  -webkit-text-fill-color: transparent;
 }
 
-.home h4 {
-  font-weight: 300;
-  font-size: 1.2rem;
-  color: grey;
+.navbar .navbar-nav a {
+  margin: 0 20px;
+  color: #5b86e5;
+  font-size: 1.1rem;
 }
 
-.home .btn-social {
-  margin-top: 1rem;
-  height: 2.5rem;
-}
-
-.home .btn-social-instagram {
-  height: 2.5rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-}
-
-.home .btn-social-github {
-  height: 2.6rem;
-}
-
-.home .profile .profile-icon {
-  margin-top: 2rem;
-  width: 200px;
-  /* Atur ukuran gambar sesuai kebutuhan Anda */
-  height: 200px;
-  /* Ukuran tinggi juga bisa diatur sesuai kebutuhan Anda */
-  border-radius: 50%;
-  /* Membuat gambar menjadi bulat */
-  object-fit: cover;
-  /* Memastikan gambar tidak terdistorsi */
-}
-
-/* section end home */
-
-/* section about me */
-.about-me {
-  padding: 1.4rem 9.5%;
-  margin-top: 5rem;
-}
-
-.about-me h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.about-me p {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-family: sans-serif;
-}
-
-.about-me p span {
-  color: #07b6d1;
-}
-
-.about-me p .yellow-spn {
-  color: #ff0000;
-}
-
-/* section about me end */
-
-/* section box start */
-.box {
-  margin-top: 5rem;
-  padding: 1.4rem 9.5%;
+.hero {
+  min-height: 95vh;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  line-height: 65px;
 }
 
-.box .box-card {
-  padding-top: 1.5rem;
-  border: 1px solid #e8e8e8;
-  width: 400px;
-  /* Lebar tetap 200px */
-  height: 400px;
-  /* Tinggi yang cukup besar untuk membuatnya panjang ke bawah */
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+.hero .content {
+  padding: 1.4rem 7%;
+  display: inline-block;
+  max-width: 60rem;
 }
 
-.box .box-card .img-icon {
-  display: block;
-  margin: auto;
-  height: 120px;
+.hero .content h1 {
+  font-size: 3rem;
 }
 
-.box .box-card h3 {
-  margin-top: 1rem;
+.container p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container span {
+  background-image: linear-gradient(to right, #36d1dc 0%, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .content h1 span {
+  background-image: linear-gradient(to right, #36d1dc 0%, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .content .btn {
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1.4rem;
+  border-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  border-image-slice: 1;
+  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #36d1dc 0%, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
+
+.about-me {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: #36d1dc;
+  background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.about-me .content {
+  min-height: 100vh;
+}
+
+.about-me .section-title {
   text-align: center;
-  color: #13b8a9;
-  font-size: 1.2rem;
+  margin-top: 50px;
+  font-size: 2rem;
 }
 
-.box .box-card p {
-  font-family: sans-serif;
-  text-align: center;
-  display: block;
+.about-me .row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 7%;
 }
 
-.box .box-card .list-app {
-  margin-top: 1.5rem;
-  line-height: 1.8rem;
+.about-me .img-people {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
-/* section project start */
+.about-me .content .row .text-people {
+  display: inline-block;
+  padding: 3.4rem;
+  font-size: 1.4rem;
+  height: auto;
+}
+
+.about-me .content .row .text-people p + p {
+  padding-top: 20px;
+  margin: 0;
+}
+
+/* section project */
 .project {
-  padding: 1.4rem 9.5%;
-  margin-top: 5rem;
+  color: #272341;
+  padding: 1rem 7% 1.4rem;
 }
 
-.project .content h3 {
-  font-size: 1.8rem;
+.project .content {
+  min-height: 130vh;
+}
+
+.project .content h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+.project .content .row .text-content .project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.project .content .row .text-content p {
   margin-bottom: 1rem;
 }
 
-.project .content p {
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.project .content .row {
+  padding: 5.4rem 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.project .content span {
-  color: #13b8a9;
+.project .content .row .text-content .button-link {
+  margin-top: 2rem;
 }
 
-.project .content .btn-project {
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-  background-color: #09b6c9;
-  color: #fff;
+.project .content .row .text-content .visit-btn {
+  border: 1px solid #5b86e5;
+  padding: 10px;
+  background-image: linear-gradient(to right, #36d1dc 0%, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
-.project .content .btn-project:hover {
-  opacity: 0.5;
-}
-
-/* section project end */
-
-/* section box end */
-
-@media screen and (max-width: 450px) {
+@media (max-width: 768px) {
   html {
-    font-size: 75%;
+    font-size: 80%;
   }
 
-  .home h1 {
-    font-size: 3.8rem;
-    font-weight: 400;
-    background: linear-gradient(to right,
-        #07b6d0,
-        #13b8a9);
-    /* Tentukan warna gradient */
-    -webkit-background-clip: text;
-    /* Aktifkan efek gradient pada teks (Chrome, Safari) */
-    background-clip: text;
-    /* Aktifkan efek gradient pada teks (Firefox) */
-    color: transparent;
-    /* Membuat teks menjadi transparan, sehingga efek gradient terlihat */
+  .hero {
+    line-height: 50px;
   }
 
-  .home h4 {
-    font-weight: 300;
+  .about-me .content .row .text-people {
     font-size: 1rem;
-    color: grey;
   }
 
-  body .navbar .logo {
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: "Young Serif", serif;
+  .about-me .content .row .text-people p + p {
+    padding-top: 20px;
+    margin: 0;
   }
 
-  .box {
-    display: block;
+  .about-me .content .row .img-people {
+    max-width: 40%;
   }
 
-  .box .box-card {
+  .project .content .row {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project .content .row .img-project {
+    height: 250px;
     margin-top: 5rem;
-    padding-top: 1.5rem;
-    border: 1px solid #e8e8e8;
-    width: 340px;
-    /* Lebar tetap 200px */
-    height: 340px;
-    /* Tinggi yang cukup besar untuk membuatnya panjang ke bawah */
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+
+  .hero {
+    line-height: 45px;
+  }
+
+  .navbar .navbar-nav {
+    display: none;
+  }
+
+  .about-me .content .row {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .about-me .content .row .img-people {
+    max-width: 60%;
+  }
+
+  .project .content .row .img-project {
+    height: 150px;
+    margin-top: 5rem;
   }
 }
