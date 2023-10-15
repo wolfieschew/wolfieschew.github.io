@@ -3,94 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link style -->
+    <title>Bagas Portfolio</title>
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Google Fonts -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,200;1,6..12,300&family=Young+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- End -->
-    <title>Bagas.js | Portfolio Page</title>
   </head>
+
   <body>
+    <!-- navbar -->
     <nav class="navbar">
-      <a class="logo">Bagas.js</a>
-      <a
-        class="btn-github"
-        href="https://github.com/wolfieschew"
-        target="_blank"
-        >My Github</a
-      >
+      <a href="#" class="navbar-logo"></a>
+      <div class="navbar-nav"></div>
     </nav>
-    <!-- section home -->
-    <section class="home">
-      <h1>Bagas Permana</h1>
-      <h4>Front End Programmer | Bussines Owner | Furry Fandom</h4>
-      <img class="btn-social" src="img/twitter.png" />
-      <img class="btn-social-instagram" src="img/instagram2.png" />
-      <img class="btn-social-github" src="img/github4.png" />
-      <div class="profile">
-        <img class="profile-icon" src="img/wolf.jpg" />
-      </div>
-    </section>
-    <!-- section home end -->
-    <!-- section about me -->
-    <section class="about-me">
-      <h3>About Me :</h3>
-      <p>
-        <span>Hai,</span> saat jenuh datang, saya bermain dengan barisan kode
-        dan mengubahnya menjadi <span>ide kreatif</span> yang dapat membantu
-        mengatasi masalah yang ada di sekitar.
-        <span>Ngoding bukan sekadar hobi</span>, tapi sudah menjadi passion
-        saya! Meski masih belajar, semangat saya membakar tiap hari hingga jadi
-        <span>programer handal dan kreatif.</span>
-      </p>
-    </section>
-    <!-- section about me end -->
-    <!-- section box start -->
-    <section class="box">
-      <div class="box-card">
-        <img class="img-icon" src="img/img1.png" />
-        <h3>Bahasa Pemograman</h3>
-        <p></p>
-        <div class="list-app">
-          <p>HTML5</p>
-          <p>CSS3</p>
-          <p>Java Script</p>
-          <p>Python</p>
-        </div>
-      </div>
-      <div class="box-card">
-        <img class="img-icon" src="img/img2.png" />
-        <h3>Aplikasi Pemograman</h3>
-        <p></p>
-        <div class="list-app">
-          <p>Visual Studio Code</p>
-          <p>Sublime Text</p>
-          <p>Note++</p>
-          <p>Jupyter</p>
-          <p>Google Colab</p>
-        </div>
-      </div>
-    </section>
-    <!-- section box end -->
-    <!-- section project start -->
-    <section class="project">
+    <!-- section hero -->
+    <section class="hero" id="hero">
       <div class="content">
-        <h3>My Project :</h3>
-        <p>
-          Berikut ini ada beberapa <span>project</span> yang sudah saya
-          ciptakan, saat ini masih dalam
-          <span>tahap pengembangan/prototype</span> dan sepenuh nya belum final.
-        </p>
-        <a class="btn-project" href="https://wolfieschew.github.io/web-store/"
-          >Toko Online Saya</a
-        >
+        <h1>Hi👋 , my name is <span>Bagas Permana</span><br /></h1>
+        <div class="container">
+          <p>I'm a <span class="auto-type"></span></p>
+        </div>
+        <a href="https://github.com/wolfieschew">
+          <button class="btn" type="submit">My GitHub</button>
+        </a>
       </div>
     </section>
-    <!-- section project end -->
+    <!-- section about me -->
+    <section class="about-me" id="aboutme">
+      <div class="content">
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="row">
+          <img class="img-people" src="img/fursuit.jpg" />
+          <div class="text-people">
+            <p>
+              I am a Web Developer, for now<br />
+              i specialized in Design and the Front-End Development.<br />
+              People Knows me as a Introvert Person.
+            </p>
+            <p>
+              I'm passionate about technology and enjoy nothing more than
+              learning the new trends and implementing it<br />
+              in the web development to make life much easier and nicer.
+            </p>
+            <p>
+              Basically I like to code to develop nice looking and cool
+              responsive Websites.<br />
+              My Hope In The Future To Become A Great Programmer.<br />Reaching
+              Full Stacks Title
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section my project  -->
+    <section class="project" id="project">
+      <div class="content">
+        <h2>MY PROJECTS</h2>
+        <div class="row">
+          <div class="text-content">
+            <h3 class="project-title">Wolfies Chew Store Site</h3>
+            <p>
+              This is my business website.<br />
+              I have created this website using a simple language<br />
+              using HTML, CSS and Javascript
+            </p>
+            <div class="button-link">
+              <a
+                class="visit-btn"
+                href="https://wolfieschew.github.io/web-store/"
+                >Visit Page</a
+              >
+            </div>
+          </div>
+          <img
+            class="img-project"
+            src="img/wolfieschewstore.png"
+            height="350"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Front - End Developer", "UI/UX Designer", "Furry Fandom"],
+        typeSpeed: 80,
+        backSpeed: 80,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
