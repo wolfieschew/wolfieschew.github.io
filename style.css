@@ -185,7 +185,13 @@ body .navbar .btn-github {
 
 @media screen and (max-width: 450px) {
   html {
-    font-size: 75%;
+    font-size: 70%;
+  }
+
+  .home h4 {
+    font-weight: 300;
+    font-size: 1rem;
+    color: grey;
   }
 
   .box {
