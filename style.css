@@ -16,10 +16,11 @@ body .navbar {
   padding: 1.4rem 9.5%;
 }
 
-body .navbar .logo {
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-family: "Young Serif", serif;
+body .logo {
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  font-size: 2.5rem;
+  background: linear-gradient(#07b6d1, #13b8a9);
 }
 
 body .navbar .btn-github {
@@ -64,14 +65,11 @@ body .navbar .btn-github {
   height: 2.5rem;
 }
 
-.home .btn-social-instagram {
-  height: 2.5rem;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-}
-
-.home .btn-social-github {
-  height: 2.6rem;
+.home .btn-socials {
+  font-size: 2rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 1rem;
 }
 
 .home .profile .profile-icon {
