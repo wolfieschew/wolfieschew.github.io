@@ -65,9 +65,11 @@ body .navbar .btn-github {
 }
 
 .home span {
-  background: url("https://api.iconify.design/mdi/paw.svg?color=%236c3428")
-    no-repeat center center / contain;
-  content: url("https://api.iconify.design/mdi/paw.svg?color=%236c3428");
+  background: url("https://api.iconify.design/mdi/paw.svg?color=grey") no-repeat
+    center center / contain;
+  content: url("https://api.iconify.design/mdi/paw.svg?color=grey");
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .home .btn-social {
